@@ -19,7 +19,6 @@ public class ConexionSQLite extends  SQLiteOpenHelper{
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        //db.execSQL("create table usuarios(PacDni INTEGER NOT NULL ,PacNom TEXT NOT NULL ,PacEma TEXT NOT NULL,CONSTRAINT PK_usuarios PRIMARY KEY(PacDni))");
 
         db.execSQL("CREATE TABLE Anuncios\n" +
                 "(\n" +
@@ -48,14 +47,6 @@ public class ConexionSQLite extends  SQLiteOpenHelper{
                 ")"
         );
 
-        /*db.execSQL("CREATE TABLE Usuario\n" +
-                "(\n" +
-                "  idempresa INTEGER NOT NULL\n" +
-                "        CONSTRAINT PK_Usuario PRIMARY KEY AUTOINCREMENT,\n" +
-                "  nombre TEXT NOT NULL\n" +
-                ")"
-        );*/
-        //db.execSQL("create table usuarios(PacDni INTEGER NOT NULL ,PacNom TEXT NOT NULL ,PacEma TEXT NOT NULL,CONSTRAINT PK_pacientes PRIMARY KEY(PacDni))");
         db.execSQL("CREATE TABLE Empresa\n" +
                 "(\n" +
                 "  idempresa INTEGER NOT NULL\n" +
@@ -79,10 +70,8 @@ public class ConexionSQLite extends  SQLiteOpenHelper{
         db.execSQL("INSERT INTO Categoria (nombre) VALUES('Granjero')");
         db.execSQL("INSERT INTO Categoria (nombre) VALUES('Profesor')");
         db.execSQL("INSERT INTO Categoria (nombre) VALUES('Pintor')");
-        //db.execSQL("INSERT INTO usuarios (PacDni, PacNom, PacEma) VALUES(73468597, 'Jordan', 'laqui2606@gmail.com')");
-        //db.execSQL("INSERT INTO usuarios (PacDni, PacNom, PacEma) VALUES(78787878, 'Jose', 'laqui2606@gmail.com')");
-        db.execSQL("INSERT INTO Empresa (nombre, encargado, correo, telefono, ruc, usuario, contrasenia, descripcion, direccion, departamento) VALUES('Elite', 'Jordan', 'jlaqui@unsa.edu.pe', '921242901', '123', 'admin', 'admin', 'Papeleria', 'Av 123', 'Arequipa')");
-        db.execSQL("INSERT INTO Empresa (nombre, encargado, correo, telefono, ruc, usuario, contrasenia, descripcion, direccion, departamento) VALUES('Super Elite', 'Jordan', 'jlaqui@unsa.edu.pe', '921242901', '123', 'admin', 'admin', 'Papeleria', 'Av 123', 'Arequipa')");
+        //db.execSQL("INSERT INTO Empresa (nombre, encargado, correo, telefono, ruc, usuario, contrasenia, descripcion, direccion, departamento) VALUES('Elite', 'Jordan', 'jlaqui@unsa.edu.pe', '921242901', '123', 'admin', 'admin', 'Papeleria', 'Av 123', 'Arequipa')");
+        //db.execSQL("INSERT INTO Empresa (nombre, encargado, correo, telefono, ruc, usuario, contrasenia, descripcion, direccion, departamento) VALUES('Super Elite', 'Jordan', 'jlaqui@unsa.edu.pe', '921242901', '123', 'admin', 'admin', 'Papeleria', 'Av 123', 'Arequipa')");
 
     }
 
